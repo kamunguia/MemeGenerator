@@ -29,13 +29,13 @@ class MyStreamListener(tweepy.StreamListener):
         ss = sid.polarity_scores(status.text)
 
         if ss['compound'] < -0.3:
-            new_status = "@{0} sad, sentiment rating: {1}".format(status.user.screen_name, ss['compound'])
+            new_status = "@{0} I am sorry you're sad :( Here's a meme to cheer you up, hopefully".format(status.user.screen_name, ss['compound'])
             meme = random.choice(negative_images)
         elif ss['compound'] < 0.3:
-            new_status = "@{0} neutral, sentiment rating: {1}".format(status.user.screen_name, ss['compound'])
+            new_status = "@{0} You seem to be chilling, here's a meme! ".format(status.user.screen_name, ss['compound'])
             meme = random.choice(neutral_images)
         else:
-            new_status = "@{0} happy, sentiment rating: {1}".format(status.user.screen_name, ss['compound'])
+            new_status = "@{0} Glad you're happy, enjoy this meme :D".format(status.user.screen_name, ss['compound'])
             meme = random.choice(positive_images)
 
         try:
