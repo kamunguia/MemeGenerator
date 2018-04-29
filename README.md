@@ -10,3 +10,15 @@ This memebot, @memebotcdk, will be able to reply in real time with an appropriat
 <p align="center">
   <img src="memebotExample.png" width="350"/>
  </p>
+
+## How does this work?
+
+Our program uses a sentiment classifer that determines the sentiment on a -1 to 1 scale. We have determined the intervals for each feeling: -1 to -0.3 Negative, -0.3 to 0.3 Neutral, 0.3 to 1.0 Positve. 
+
+From there, we implement a Word2Vec analysis. We check the distance each word in the tweet has with wo
+
+The memes have a csv file in each folder with a string of words that relate to a meme.
+<p align="center">
+  <img src="/Images/negative/negative-d.jpg" width="350"/>
+ </p>
+So if the meme is about the weekend ending, like the one above, the tags for this image are: cat, grumpy, Monday, sarcasm, Sunday, work, school. Tags and memes were chosen by us. 
