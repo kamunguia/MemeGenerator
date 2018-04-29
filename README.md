@@ -1,4 +1,4 @@
-# MemeGenerator
+# The Hidden Meme-ing Behind Your Tweet: A Twitter Sentiment Analysis Bot  
 
 Collective Intelligence Final Project May 2018
  
@@ -32,7 +32,7 @@ The memes have a csv file in each folder with a string of words that associated 
 
 The above meme is about the weekend ending and the tags for this image are: cat, grumpy, Monday, sarcasm, Sunday, work, school. Tags and memes were chosen by us. 
 
-#Final Product Example
+# Final Product Example
 <p align="center">
   <img src="memebotExample2.png" width="350"/>
  </p>
