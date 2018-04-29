@@ -16,7 +16,9 @@ This memebot, @comp440cdk, will be able to reply in real time with an appropriat
  
  ## How to run this?
  
-In order for the memebot to work, in the terminal, run python bot.py. From there, you can tweet @comp440cdk and it will respond within seconds. You do not need to follow the bot in order to receive a tweet back but you do need to keep the file running! 
+In order for the memebot to work, in the terminal, run either python bot.py or python bot_word2vec.py. Bot.py is just a sentiment analysis and chooses the meme randomly. bot_word2vec.py  performs sentiment analysis and then chooses the most closley related meme within the detected sentiment category based on word2vec distance to the associated tags.
+
+From there, you can tweet @comp440cdk and it will respond within seconds. You do not need to follow the bot in order to receive a tweet back but you do need to keep the file running! 
 
 ## How does this work?
 
